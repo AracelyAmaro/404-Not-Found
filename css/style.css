@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1em;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 80px 0px; */
+    margin-top: 80px 0px;
+}
+.description{
+    width: 381px;
+    font-family: 'Space Mono', monospace; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+    margin: 36px 0px;
+}
+
+h2{
+left: 77px;
+top: 40px;
+font-family: Inconsolata;
+font-style: normal;
+font-weight: bold;
+/* font-size: 24px; */
+line-height: 25px;
+letter-spacing: -0.08em;
+text-transform: uppercase;
+color: #333333;
+padding: 40px 77px;
+}
+.colum2{
+    margin-left: 20px;
+}
+img{
+    height: 450px;
+    width: 540px;
+    padding: 0px 77px;
+}
+.title{
+    font-family: 'Space Mono', monospace; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    width: 586px;
+
+/* Gray 1 */
+
+color: #333333;
+}
+button{
+    padding: 24px 43px;
+    background-color: #333333;
+    margin: 2em 0em;
+}
+.text-button{
+    font-family: 'Space Mono', monospace; 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+footer{
+    bottom: 0;
+    padding-bottom: 0.5em;
+}
+.creator{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+/* identical to box height */
+
+text-align: center;
+
+color: #BDBDBD;
+}
+@media screen and (max-width: 380px) {
+    
+    h2{
+        padding: 20px 24px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .title{
+        font-size: 48px;
+        line-height: 71px;
+    }
+    .description{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    img{
+        height: 238px;
+        width: 286px;
+        padding: 0px 44px;
+    }
+    .colum2 > *{
+        width: 350px;
+
+    }
+}
